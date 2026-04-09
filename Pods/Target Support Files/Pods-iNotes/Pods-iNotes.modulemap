@@ -1,0 +1,6 @@
+framework module Pods_iNotes {
+  umbrella header "Pods-iNotes-umbrella.h"
+
+  export *
+  module * { export * }
+}

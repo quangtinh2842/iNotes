@@ -40,6 +40,14 @@ class MBase: Object, Mappable {
     fatalError("This method must be overridden")
   }
   
+  class func deleteWithId(_ id: String, completion handler: @escaping (Error?) -> Void) {
+    let ref = Database.database().reference().child(collectionName()).child(id)
+    
+    ref.removeValue { error, _ in
+      handler(error)
+    }
+  }
+  
   // Read
   class func find(byId objectId: String, completion handler: @escaping ObjectQueryResultHandler) {
     let dbRef = Database.database().reference()

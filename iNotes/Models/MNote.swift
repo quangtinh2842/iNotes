@@ -114,14 +114,6 @@ class MNote: MBase, Identifiable {
     return results.first
   }
   
-  static func deleteWithId(_ id: String, completion handler: @escaping (Error?) -> Void) {
-    let ref = Database.database().reference().child(MNote.collectionName()).child(id)
-    
-    ref.removeValue { error, _ in
-      handler(error)
-    }
-  }
-  
   override func toDict() -> [String: Any] {
     let tmp = MNote(mNote: self)
     return tmp.toJSON()

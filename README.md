@@ -11,7 +11,7 @@
   - Thêm đăng xuất (`MUser.signOutEverywhere`) ở `ProfileView`.
 
 - **Thiết kế mô hình dữ liệu**
-  - Tạo base model `MBase` cho CRUD + mapping + validation.
+  - Tạo base model `MBase` cho Tìm, Thêm, Cập nhật + mapping + validation.
   - Tạo model `MNote` (id, uid, nội dung, thời gian tạo/sửa, trạng thái sync).
   - Tạo model `MUser` (uid, provider, email, avatar...).
   - Dùng `ObjectMapper` để map JSON <-> model.
@@ -22,7 +22,7 @@
   - Xóa note trên Firebase (`MNote.deleteWithId`, `FirebaseManager.deleteNotes`).
 
 - **Tích hợp Realm cho local storage**
-  - Tạo `RealmManager` để khởi tạo DB, insert/update/delete note.
+  - Tạo `RealmManager` để khởi tạo DB, insert/delete note.
   - Đọc note local theo `uid`.
   - Kết hợp Realm + Firebase để hỗ trợ offline-first.
 
@@ -39,7 +39,7 @@
   - Hiển thị thời gian “time ago” và icon trạng thái sync cloud.
 
 - **Xây khu vực hồ sơ và thông tin phụ**
-  - `ProfileView`: hiển thị thông tin user, avatar (Kingfisher), UID, logout.
+  - `ProfileView`: hiển thị thông tin user là UID; logout.
   - `TOSView`: trang Terms of Service.
   - `ResourcesView` + `ResourcesStore`: danh sách tài nguyên tham khảo.
 
@@ -51,7 +51,6 @@
   - `CommonTypes`: typealias callback, enum query/validation, `processAfterSignIn`.
 
 - **Cấu hình project & dependencies**
-  - Thêm CocoaPods (`Podfile`, `Pods`).
-  - Tích hợp nhiều thư viện: Firebase (Auth/Database/...),
-    Realm, ObjectMapper, AlertToast, HUD, Kingfisher, Reachability.
+  - Tích hợp nhiều thư viện: Firebase (Auth, Database),
+    Realm, ObjectMapper, AlertToast, HUD, Reachability.
   - Thêm `GoogleService-Info.plist` để kết nối Firebase.

@@ -54,3 +54,12 @@
   - Tích hợp nhiều thư viện: Firebase (Auth, Database),
     Realm, ObjectMapper, AlertToast, HUD, Reachability.
   - Thêm `GoogleService-Info.plist` để kết nối Firebase.
+
+<p align="center">
+  <img src="Scenes/Simulator Screen Shot - iPhone SE (3rd generation) - 2026-04-17 at 09.28.43.png" width="250">
+  <img src="Scenes/Simulator Screen Shot - iPhone SE (3rd generation) - 2026-04-17 at 09.31.38.png" width="250">
+  <img src="Scenes/Simulator Screen Shot - iPhone SE (3rd generation) - 2026-04-17 at 09.31.53.png" width="250">
+  <img src="Scenes/Simulator Screen Shot - iPhone SE (3rd generation) - 2026-04-17 at 09.33.32.png" width="250">
+  <img src="Scenes/Simulator Screen Shot - iPhone SE (3rd generation) - 2026-04-17 at 09.33.37.png" width="250">
+  <img src="Scenes/Simulator Screen Shot - iPhone SE (3rd generation) - 2026-04-17 at 09.33.45.png" width="250">
+</p>
